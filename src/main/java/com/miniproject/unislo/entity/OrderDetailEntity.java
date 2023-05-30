@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinColumns;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -22,15 +23,14 @@ public class OrderDetailEntity {
     
     @ManyToOne
     @JoinColumn(name = "ORD_NO")
-    private OrderEntity OrdNo; // 주문번호
+    private OrderEntity orderEntity; // 주문번호
 
     @ManyToOne
-    @JoinColumn(name = "PROD_ID")
-    private ProductEntity ProdId; // 제품식별코드
-
-    @ManyToOne
-    @JoinColumn(name = "PROD_PRICE")
-    private ProductEntity ProdPrice; // 제품 가격
+    @JoinColumns({
+        @JoinColumn(name = "PROD_ID", referencedColumnName= "PROD_ID")
+        ,@JoinColumn(name = "PROD_PRICE", referencedColumnName = "PROD_PRICE")
+    })
+    private ProductEntity productEntity; // 제품식별코드
 
     @Column(name = "ORD_DET_PROD_QTY")
     private String OrdDetProdQty; // 제품 개수

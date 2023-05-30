@@ -18,8 +18,8 @@ public class CartDto {
         ProductDto productDto = new ProductDto();
 
         cartDto.setCartNo(cartEntity.getCartNo());
-        productDto.setProdId(cartEntity.getProdId().getProdId());
-        userDto.setUserId(cartEntity.getUserId().getUserId());
+        productDto.setProdId(cartEntity.getProductEntity().getProdId());
+        userDto.setUserId(cartEntity.getUserEntity().getUserId());
         cartDto.setCartProdQty(cartEntity.getCartProdQty());
 
         return cartDto;

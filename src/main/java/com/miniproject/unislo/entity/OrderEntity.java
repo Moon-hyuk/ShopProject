@@ -22,7 +22,7 @@ public class OrderEntity {
 
     @ManyToOne
     @JoinColumn(name = "USER_ID")
-    private UserEntity UserId; // 회원아이디(이메일)
+    private UserEntity userEntity; // 회원아이디(이메일)
 
     @Column(name = "ORD_AMOUNT")
     private String OrdAmount; // 주문 총결제금액

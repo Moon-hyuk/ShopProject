@@ -27,7 +27,7 @@ public class OrderDto {
         UserDto userDto = new UserDto();
 
         orderDto.setOrdNo(orderEntity.getOrdNo());
-        userDto.setUserId(orderEntity.getUserId().getUserId());
+        userDto.setUserId(orderEntity.getUserEntity().getUserId());
         orderDto.setOrdAmount(orderEntity.getOrdAmount());
         orderDto.setOrdDate(orderEntity.getOrdDate());
         orderDto.setOrdCard(orderEntity.getOrdCard());

@@ -18,8 +18,8 @@ public class ReviewDto {
         ProductDto productDto = new ProductDto();
 
         reviewDto.setReviewNo(reviewEntity.getReviewNo());
-        userDto.setUserId(reviewEntity.getUserId().getUserId());
-        productDto.setProdId(reviewEntity.getProdId().getProdId());
+        userDto.setUserId(reviewEntity.getUserEntity().getUserId());
+        productDto.setProdId(reviewEntity.getProductEntity().getProdId());
         reviewDto.setReviewContents(reviewEntity.getReviewContents());
 
         return reviewDto;

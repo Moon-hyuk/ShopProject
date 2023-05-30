@@ -22,11 +22,11 @@ public class ReviewEntity {
 
     @ManyToOne
     @JoinColumn(name = "USER_ID")
-    private UserEntity UserId; // 사용자아이디(이메일)
+    private UserEntity userEntity; // 사용자아이디(이메일)
 
     @ManyToOne
     @JoinColumn(name = "PROD_ID")
-    private ProductEntity ProdId; // 제품식별코드
+    private ProductEntity productEntity; // 제품식별코드
 
     @Column(name = "REVIEW_CONTENTS")
     private String ReviewContents; // 리뷰 내용

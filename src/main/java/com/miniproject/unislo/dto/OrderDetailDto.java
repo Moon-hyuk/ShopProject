@@ -19,9 +19,9 @@ public class OrderDetailDto {
         ProductDto productDto = new ProductDto();
 
         orderDetailDto.setOrdDetNo(orderDetailEntity.getOrdDetNo());
-        orderDto.setOrdNo(orderDetailEntity.getOrdNo().getOrdNo());
-        productDto.setProdId(orderDetailEntity.getProdId().getProdId());
-        productDto.setProdPrice(orderDetailEntity.getProdPrice().getProdPrice());
+        orderDto.setOrdNo(orderDetailEntity.getOrderEntity().getOrdNo());
+        productDto.setProdId(orderDetailEntity.getProductEntity().getProdId());
+        productDto.setProdPrice(orderDetailEntity.getProductEntity().getProdPrice());
         orderDetailDto.setOrdDetProdQty(orderDetailEntity.getOrdDetProdQty());
 
         return orderDetailDto;

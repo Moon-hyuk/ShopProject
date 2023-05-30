@@ -26,11 +26,11 @@ public class CartEntity implements Serializable{
 
     @ManyToOne
     @JoinColumn(name = "PROD_ID")
-    private ProductEntity ProdId;// 제품식별코드
+    private ProductEntity productEntity;// 제품식별코드
 
     @ManyToOne
     @JoinColumn(name = "USER_ID")
-    private UserEntity UserId;// 사용자아이디(이메일)
+    private UserEntity userEntity;// 사용자아이디(이메일)
 
     @Column(name = "CART_PROD_QTY")
     private String CartProdQty;// 장바구니 상품 개수
