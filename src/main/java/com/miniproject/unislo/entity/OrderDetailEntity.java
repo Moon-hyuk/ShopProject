@@ -19,7 +19,7 @@ public class OrderDetailEntity {
 
     @Id
     @Column(name = "ORD_DET_NO")
-    private String OrdDetNo; // 주문상세번호
+    private String ordDetNo; // 주문상세번호
     
     @ManyToOne
     @JoinColumn(name = "ORD_NO")
@@ -33,7 +33,7 @@ public class OrderDetailEntity {
     private ProductEntity productEntity; // 제품식별코드
 
     @Column(name = "ORD_DET_PROD_QTY")
-    private String OrdDetProdQty; // 제품 개수
+    private String ordDetProdQty; // 제품 개수
 
     public static OrderDetailEntity toOrderDetailEntity(OrderDetailDto orderDetailDto) {
 

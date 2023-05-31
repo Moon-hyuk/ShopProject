@@ -6,11 +6,11 @@ import lombok.Data;
 
 @Data
 public class UserDto {
-    private String UserId; // 회원 아이디(이메일)
-    private String UserNm; // 회원명
-    private String UserPw; // 비밀번호
-    private String UserTelno; // 회원 전화번호
-    private String UserYn; // 회원 탈퇴 여부
+    private String userId; // 회원 아이디(이메일)
+    private String userNm; // 회원명
+    private String userPw; // 비밀번호
+    private String userTelno; // 회원 전화번호
+    private String userYn; // 회원 탈퇴 여부
 
     public static UserDto toUserDto(UserEntity userEntity) {
 

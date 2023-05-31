@@ -22,7 +22,7 @@ public class CartEntity implements Serializable{
 
     @Id
     @Column(name = "CART_NO")
-    private String CartNo;
+    private String cartNo;
 
     @ManyToOne
     @JoinColumn(name = "PROD_ID")
@@ -33,7 +33,7 @@ public class CartEntity implements Serializable{
     private UserEntity userEntity;// 사용자아이디(이메일)
 
     @Column(name = "CART_PROD_QTY")
-    private String CartProdQty;// 장바구니 상품 개수
+    private String cartProdQty;// 장바구니 상품 개수
 
     public static CartEntity toCartEntity(CartDto cartDto) {
 

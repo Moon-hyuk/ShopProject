@@ -6,15 +6,15 @@ import lombok.Data;
 
 @Data
 public class ProductDto {
-    private String ProdId; // 제품식별코드
-    private String ProdNm; // 제품명
-    private String ProdPrice; // 제품가격
-    private String ProdInfo; // 제품 정보
-    private String ProdSales; // 제품 판매량
-    private String ProdCategory; // 제품 카테고리
-    private String ProdSize; // 제품 사이즈
-    private String ProdStock; // 제품 재고량
-    private String ProdColor; // 제품 색상
+    private String prodId; // 제품식별코드
+    private String prodNm; // 제품명
+    private String prodPrice; // 제품가격
+    private String prodInfo; // 제품 정보
+    private String prodSales; // 제품 판매량
+    private String prodCategory; // 제품 카테고리
+    private String prodSize; // 제품 사이즈
+    private String prodStock; // 제품 재고량
+    private String prodColor; // 제품 색상
 
     public static ProductDto toProductDto(ProductEntity productEntity) {
 

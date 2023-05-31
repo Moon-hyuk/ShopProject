@@ -6,10 +6,10 @@ import lombok.Data;
 
 @Data
 public class CartDto {
-    private String CartNo;
-    private String ProdId;// 제품식별코드
-    private String UserId;// 사용자아이디(이메일)
-    private String CartProdQty;// 장바구니 상품 개수
+    private String cartNo;
+    private String prodId;// 제품식별코드
+    private String userId;// 사용자아이디(이메일)
+    private String cartProdQty;// 장바구니 상품 개수
 
     public static CartDto toCartDto(CartEntity cartEntity) {
 
