@@ -6,10 +6,10 @@ import lombok.Data;
 
 @Data
 public class ReviewDto {
-    private String ReviewNo; // 리뷰 식별번호
-    private String UserId; // 사용자아이디(이메일)
-    private String ProdId; // 제품식별코드
-    private String ReviewContents; // 리뷰 내용
+    private String reviewNo; // 리뷰 식별번호
+    private String userId; // 사용자아이디(이메일)
+    private String prodId; // 제품식별코드
+    private String reviewContents; // 리뷰 내용
 
     public static ReviewDto toReviewDto(ReviewEntity reviewEntity) {
 

@@ -18,7 +18,7 @@ public class ReviewEntity {
 
     @Id
     @Column(name = "REVIEW_NO")
-    private String ReviewNo; // 리뷰 식별번호
+    private String reviewNo; // 리뷰 식별번호
 
     @ManyToOne
     @JoinColumn(name = "USER_ID")
@@ -29,7 +29,7 @@ public class ReviewEntity {
     private ProductEntity productEntity; // 제품식별코드
 
     @Column(name = "REVIEW_CONTENTS")
-    private String ReviewContents; // 리뷰 내용
+    private String reviewContents; // 리뷰 내용
 
     public static ReviewEntity toReviewEntity(ReviewDto reviewDto) {
 

@@ -6,11 +6,11 @@ import lombok.Data;
 
 @Data
 public class OrderDetailDto {
-    private String OrdDetNo; // 주문상세번호
-    private String OrdNo; // 주문번호
-    private String ProdId; // 제품식별코드
-    private String ProdPrice; // 제품 가격
-    private String OrdDetProdQty; // 제품 개수
+    private String ordDetNo; // 주문상세번호
+    private String ordNo; // 주문번호
+    private String prodId; // 제품식별코드
+    private String prodPrice; // 제품 가격
+    private String ordDetProdQty; // 제품 개수
 
     public static OrderDetailDto toOrderDetailDto(OrderDetailEntity orderDetailEntity) {
 

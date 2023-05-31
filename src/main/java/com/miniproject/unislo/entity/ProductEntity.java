@@ -16,23 +16,23 @@ public class ProductEntity {
 
     @Id
     @Column(name = "PROD_ID")
-    private String ProdId; // 제품식별코드
+    private String prodId; // 제품식별코드
     @Column(name = "PROD_NM")
-    private String ProdNm; // 제품명
+    private String prodNm; // 제품명
     @Column(name = "PROD_PRICE")
-    private String ProdPrice; // 제품가격
+    private String prodPrice; // 제품가격
     @Column(name = "PROD_INFO")
-    private String ProdInfo; // 제품 정보
+    private String prodInfo; // 제품 정보
     @Column(name = "PROD_SALES")
-    private String ProdSales; // 제품 판매량
+    private String prodSales; // 제품 판매량
     @Column(name = "PROD_CATEGORY")
-    private String ProdCategory; // 제품 카테고리
+    private String prodCategory; // 제품 카테고리
     @Column(name = "PROD_SIZE")
-    private String ProdSize; // 제품 사이즈
+    private String prodSize; // 제품 사이즈
     @Column(name = "PROD_STOCK")
-    private String ProdStock; // 제품 재고량
+    private String prodStock; // 제품 재고량
     @Column(name = "PROD_COLOR")
-    private String ProdColor; // 제품 색상
+    private String prodColor; // 제품 색상
 
     public static ProductEntity toProductEntity(ProductDto productDto) {
 

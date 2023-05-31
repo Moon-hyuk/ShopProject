@@ -16,15 +16,15 @@ public class UserEntity {
 
     @Id
     @Column(name = "USER_ID")
-    private String UserId; // 회원 아이디(이메일)
+    private String userId; // 회원 아이디(이메일)
     @Column(name = "USER_NM")
-    private String UserNm; // 회원명
+    private String userNm; // 회원명
     @Column(name = "USER_PW")
-    private String UserPw; // 비밀번호
+    private String userPw; // 비밀번호
     @Column(name = "USER_TELNO")
-    private String UserTelno; // 회원 전화번호
+    private String userTelno; // 회원 전화번호
     @Column(name = "USER_YN")
-    private String UserYn; // 회원 탈퇴 여부
+    private String userYn; // 회원 탈퇴 여부
 
     public static UserEntity toUserEntity(UserDto userDto) {
 
