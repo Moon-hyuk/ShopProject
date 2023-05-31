@@ -18,7 +18,7 @@ public class OrderEntity {
 
     @Id
     @Column(name = "ORD_NO")
-    private String ordNo; // 주문번호
+    private String OrdNo; // 주문번호
 
     @ManyToOne
     @JoinColumn(name = "USER_ID")
