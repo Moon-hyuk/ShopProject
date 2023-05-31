@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 import com.miniproject.unislo.dto.CartDto;
@@ -28,7 +29,7 @@ public class CartEntity implements Serializable{
     @JoinColumn(name = "PROD_ID")
     private ProductEntity productEntity;// 제품식별코드
 
-    @ManyToOne
+    @OneToOne
     @JoinColumn(name = "USER_ID")
     private UserEntity userEntity;// 사용자아이디(이메일)
 
